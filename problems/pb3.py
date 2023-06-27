@@ -1,6 +1,11 @@
 def youngest_student(students):
-    pass # TODO:
+    min = 1
+    y= ''
+    for name in students:
+        if min>students[name]:
+            min= students[name]
+            y=name
+
+    return y
 
 
-# students = {"Alice": 18, "Bob": 20, "Charlie": 19, "David": 22, "Jay": 20}
-# print(youngest_student(students))  # Expected output: "Alice"

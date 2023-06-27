@@ -1,7 +1,15 @@
 def max_values(nums):
-  pass #TODO:
+  max=nums[0]
+  max2=nums[0]
+  for i in range(0,len(nums)):
+    if nums[i]>max :
+      max=nums[i]
+    elif max > nums[i] > max2:
+      max2 = nums[i]
+  return max,max2
 
 
 
-# print(max_values([4, 7, 2, 8, 10, 9])) # -> [4, 5]
-# print(max_values([-5, -2, -1, -11])) # -> [1, 2]
+
+
+
